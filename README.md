@@ -1,6 +1,8 @@
 # Welcome to my Java Boombox!
 
-![N|Solid](https://cdn.shopify.com/s/files/1/0589/7325/7894/products/Mini-Boombox-Sticker_2000x.png?v=1672340486)
+<div style="text-align:center;">
+<img src="https://cdn.shopify.com/s/files/1/0589/7325/7894/products/Mini-Boombox-Sticker_2000x.png?v=1672340486" alt="Boombox" width="300"  />
+</div>
 Get a wav audio file in your local machine.
 
 run `javac Main1.java` to compile
