@@ -11,7 +11,7 @@ public class Main{
         
         Scanner scanner = new Scanner(System.in);
 
-        File file = new File("High_Noon.wav");
+        File file = new File("Your_Audio_File_Name");
         AudioInputStream audioStream = AudioSystem.getAudioInputStream(file);
         Clip clip = AudioSystem.getClip();
         clip.open(audioStream);
