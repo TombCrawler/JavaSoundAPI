@@ -11,7 +11,7 @@ public class Main{
 
         // Use command line argument to take the audio file
         if(args.length !=1){
-            System.out.println("Usage: java Main <Path_Name/AudioFIleName.wav>");
+            System.out.println("Usage: java Main Path/to/AudioFIleName.wav");
             return;
         }
 
