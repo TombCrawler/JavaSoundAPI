@@ -8,10 +8,24 @@ import java.util.Scanner;
 public class Main{
 
     public static void main(String[] args) throws UnsupportedAudioFileException, IOException, LineUnavailableException{
-        
+
+        // Use command line argument to take the audio file
+        if(args.length !=1){
+            System.out.println("Usage: java Main <Path_Name/AudioFIleName.wav>");
+            return;
+        }
+
+        String audioFilePath = args[0];
+        File file = new File(audioFilePath);
+
+        if(!file.exists()){
+            System.out.println("File does not exist: " + audioFilePath);
+            return;
+        }
+
+
         Scanner scanner = new Scanner(System.in);
 
-        File file = new File("Your_Audio_File_Name");
         AudioInputStream audioStream = AudioSystem.getAudioInputStream(file);
         Clip clip = AudioSystem.getClip();
         clip.open(audioStream);

@@ -1,13 +1,16 @@
 # Welcome to my Java Boombox!
 
-![N|Solid](https://img.freepik.com/premium-vector/bright-colored-poster-zine-culture-style-vintage-recording-equipment-boombox_299737-26.jpg?w=2000)
-
-Add a wav audio file 
-Change the audio file name in L14
+![N|Solid](https://cdn.shopify.com/s/files/1/0589/7325/7894/products/Mini-Boombox-Sticker_2000x.png?v=1672340486)
+Get a wav audio file in your local machine.
 
 run `javac Main.java` to compile
 
-run `java Main` to play music!
+run `java Main path/to/your_Wav_File` to play music!
 <br>
+
+For example, if your wav file "rock.wav" is located in the download folder, your path name might be
+"user/download/rock.wav"
+<br>
+
 Type in the command as the system asks.
-For example, to play, type `P` or `p`
+<br>For example, to play, type `P` or `p`
