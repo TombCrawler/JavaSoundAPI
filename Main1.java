@@ -37,12 +37,28 @@ public class Main1 {
     private static void createGUI() {
         JFrame frame = new JFrame("Tomb's Boombox");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(300, 200);
-        frame.setLayout(new FlowLayout());
+        frame.setSize(400, 400);
+        frame.setLayout(null);
 
+        // Load background image
+        ImageIcon imageIcon = new ImageIcon("boombox.png");
+        Image image = imageIcon.getImage();
+        Image scaledImage = image.getScaledInstance(400, 400, Image.SCALE_SMOOTH);
+        ImageIcon scaledImageIcon = new ImageIcon(scaledImage);
+        JLabel backgroundLabel = new JLabel(scaledImageIcon);
+        backgroundLabel.setBounds(0, 0, frame.getWidth(), frame.getHeight());
+        frame.getContentPane().add(backgroundLabel, 0); //add as the bottom layer
+
+
+
+        frame.setLocationRelativeTo(null);
         JButton playButton = new JButton("Play");
         JButton stopButton = new JButton("Stop");
         JButton resetButton = new JButton("Reset");
+
+        playButton.setBounds(50, 330, 100, 30);
+        stopButton.setBounds(150, 330, 100, 30);
+        resetButton.setBounds(250, 330, 100, 30);
 
         playButton.addActionListener(new ActionListener() {
             @Override
